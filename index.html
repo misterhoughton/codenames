@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coder Ganster Name Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Roboto" rel="stylesheet">
+    <style>
+        body {
+            margin: 12em 1em 1em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            background-color: #08b9f5;
+        }
+        h1 {
+            display: inline-block;
+            padding: .5em;
+            background-color: #122b40;
+            color: #fff;
+            -ms-transform: rotate(-2deg); /* IE 9 */
+            -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+            transform: rotate(-2deg);
+        }
+        p {
+            margin: 0 0 0.25em;
+            font-family: "Creepster", cursive;
+            font-size: 7em;
+            color: #fff
+        }
+
+        button {
+            display: inline-block;
+            padding: 15px 32px;
+            background-color: #f3548a;
+            border: none;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Gangster Coder Name Generator</h1>
+<p id="message">What's your name?</p>
+<button onclick="createMessage()">GENERATE</button>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+<script>
+    //        $.get('http://localhost:8081/rest/v1/properties', function(data) {
+    //            console.table(data);
+    //        });
+
+    var firstNames = [],
+        secondNames = [];
+
+    firstNames = ['Little', 'Heavy', 'Big', 'Total', 'Howling', 'Erronious', 'Main', 'Double', 'Random', 'Fuzzy', 'Null', 'Bad', 'Noisy', 'Nasty', 'The', 'Hot', 'Dangerous', 'Ugly', 'Trojan', 'Wrigglin\'', 'Angry', 'Short', 'Primary'];
+    secondNames = ['Syntax', 'Mouse', 'Java', 'Progress', 'Indent', 'Terminal', 'Entry Point', 'Bug', 'Integer', 'String', 'Click', 'Code', 'Logic', 'Pointer', 'Function', 'Control', 'Key', 'Shift', 'Shell', 'Virus', 'Worm', 'Minus', 'Operator', 'Exception', 'Number', 'Dev', 'Server', 'Client'];
+
+    function getRandomItem(array) {
+        var rnd = Math.floor(Math.random() * array.length);
+        return array[rnd];
+    }
+
+    function generateName() {
+        var firstName = getRandomItem(firstNames),
+            secondName =  getRandomItem(secondNames);
+        return firstName + ' ' + secondName;
+    }
+
+    function createMessage() {
+        document.getElementById('message').innerHTML = generateName();
+    }
+</script>
+</body>
+</html>
