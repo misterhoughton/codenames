@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coder Ganster Name Generator</title>
     <link href="https://fonts.googleapis.com/css?family=Creepster|Roboto" rel="stylesheet">
@@ -50,15 +49,11 @@
 <button onclick="createMessage()">GENERATE</button>
 <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
 <script>
-    //        $.get('http://localhost:8081/rest/v1/properties', function(data) {
-    //            console.table(data);
-    //        });
-
     var firstNames = [],
         secondNames = [];
 
-    firstNames = ['Little', 'Heavy', 'Big', 'Total', 'Howling', 'Erronious', 'Main', 'Double', 'Random', 'Fuzzy', 'Null', 'Bad', 'Noisy', 'Nasty', 'The', 'Hot', 'Dangerous', 'Ugly', 'Trojan', 'Wrigglin\'', 'Angry', 'Short', 'Primary'];
-    secondNames = ['Syntax', 'Mouse', 'Java', 'Progress', 'Indent', 'Terminal', 'Entry Point', 'Bug', 'Integer', 'String', 'Click', 'Code', 'Logic', 'Pointer', 'Function', 'Control', 'Key', 'Shift', 'Shell', 'Virus', 'Worm', 'Minus', 'Operator', 'Exception', 'Number', 'Dev', 'Server', 'Client'];
+    firstNames = ['Little', 'Heavy', 'Big', 'Total', 'Howling', 'Erronious', 'Main', 'Double', 'Random', 'Fuzzy', 'Null', 'Bad', 'Noisy', 'Nasty', 'The', 'Hot', 'Dangerous', 'Ugly', 'Trojan', 'Wrigglin\'', 'Angry', 'Short', 'Primary', 'Mad', 'Crazy', 'Hyper'];
+    secondNames = ['Syntax', 'Mouse', 'Java', 'Progress', 'Indent', 'Terminal', 'Entry Point', 'Bug', 'Integer', 'String', 'Click', 'Code', 'Logic', 'Pointer', 'Function', 'Control', 'Key', 'Shift', 'Shell', 'Virus', 'Worm', 'Minus', 'Operator', 'Exception', 'Number', 'Dev', 'Server', 'Client', 'Repo', 'Markup', 'Push', 'Pull'];
 
     function getRandomItem(array) {
         var rnd = Math.floor(Math.random() * array.length);
