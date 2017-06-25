@@ -7,5 +7,3 @@ Probably not.
 And who has time to come up with some ballin' gangster name? Nobody, that's who. 
 
 That's why the modern programmer needs to leverage the awesome power of JavaScript and HTML in their pursuit of social respectability - gangsta style!
-
-Either that or this might just be a dumb little repo for playing around with Git...
